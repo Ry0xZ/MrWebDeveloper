@@ -1,0 +1,436 @@
+/* Reiniciar margenes, bordes, ect*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* maquetado con grid */
+
+html{
+    height: 100%;
+}
+
+.contenedor-grid {
+    display: grid;
+    min-height: 100%;
+    grid-template-areas:
+    "header" 
+    "navbar"
+    "main"
+    "footer";
+}
+
+/* barra de navegacion */
+
+#open-nav   {
+    display: none;
+}
+
+.fa-solid {
+    display: none;
+    opacity: 0;
+}
+
+.header {
+    grid-area: header;
+    height: 80px;
+    width: 100%;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+
+.nav {
+    grid-area: navbar;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+
+}
+
+.logo {
+    font-size: 30px;
+    padding: 0 40px;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    text-decoration-line: overline;
+    text-decoration-color: rgb(0, 0, 0);
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase ;
+    line-height: 80px;
+    width: max-content;
+    
+}
+
+.logo span {
+    color: rgba(143, 23, 47, 0.856);
+
+}
+
+.nav-menu {
+    margin-right: 40px;
+    display: flex;
+
+}
+
+.nav-menu-link {
+    text-decoration: none;
+    color: rgb(7, 44, 92);
+}
+
+.nav-menu-link:hover {
+    color: aliceblue;
+    border-top: 2px solid rgba(0, 0, 0, 0.699);
+}
+
+
+.nav-menu-item {
+    list-style: none;
+    text-decoration: none;
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    line-height: 40px;
+    width: max-content;
+}  
+
+/* estilo pagina home */
+
+.home {
+    background-image: url(./pages/Media/fondo.jpeg);
+    grid-area: main;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.contenidoHome {
+        color: aliceblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        padding-top: 200px ;
+        padding-bottom: 80px;
+        font-size: 40px;
+        text-transform: uppercase;
+    
+}
+
+.contenidoHome__titulo {
+    background-color: rgba(0, 0, 0, 0.486);
+    text-align: center;
+}
+
+.contenidoHome__boton {
+    margin-top: 30px;
+}
+.contenidoHome__link {
+    margin-top: 34px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.486);
+    border: 2px solid rgb(255, 255, 255)
+
+}
+
+
+/* estilo pagina de proyecto */
+.proyectos {
+        grid-area: main;
+        background-image: url(./pages/Media/fondoproyectos.jpg);
+        background-size: cover;
+        min-height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+}
+
+.contenedorProyectos__titulo {
+    color: crimson;
+    padding-bottom: 15px;
+    text-align: center;
+
+}
+
+.contenedorProyectos__parrafo {
+    font-weight:bold;
+    font-size: large;
+    text-align: center;
+}
+
+.contenedorProyectos {
+    color: rgb(0, 0, 0);
+    width: 600px;
+    height: auto;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.ContenedorImagen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    
+    
+}
+
+.ContenedorImagen_elemento {
+    width: 459px;
+    height: 359px;
+    object-fit: cover;
+    margin: 10px;
+    
+}
+
+
+/* estilo pagina de servicios */
+.servicios {
+    background-image: url(./pages/Media/fondoservicios.jpg);
+    background-size: cover;
+    height: calc(100vh - 100px);
+}
+
+.titulo {
+    color: rgb(0, 0, 0);
+    display:inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 1000px;
+    padding-right: 1000px;
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contenedorServicios {
+    height: 400px;
+    width: 500px;
+    float:right;
+    margin-top: 250px;
+    margin-right: 50%;
+    margin-left: 50%;
+}
+.contenedorServicios__elemento {
+    font-family: 'Lemonada', cursive;
+    display:inline-block;
+    vertical-align: middle;
+    float: right;
+    height: 200px;
+    width: 300px;
+    position: relative;
+    padding: 30px 30px 30px 30px;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.contenedorServicios__elemento-titulo{
+    color: rgba(255, 5, 5, 0.897);
+    text-transform: uppercase;
+    
+}
+
+/* estilo pagina de contacto*/
+
+.contacto {
+    background-image: url(./pages/Media/fondocontacto.jpg);
+    grid-area: main;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.form {
+    background-color: cornflowerblue;
+    margin:auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 2.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    top: 10px;
+
+
+}
+
+.form_titulo {
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form_contenedor {
+    margin-top: 0px;
+    display:grid;
+    gap: 2.5em;
+    z-index: 2;
+
+}
+
+.form_elemento {
+    position: relative;
+    color: black;
+}
+
+.form_elemento span {
+    color: rgb(255, 0, 0);
+}
+
+.form_input {
+    width: 100%;
+    border: none;
+    background: none;
+    padding: .6em .3em;
+    color: rgb(0, 0, 0);
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+
+}
+
+.form_enviar {
+    color: rgb(0, 0, 0);
+    background-color: rgba(12, 105, 245, 0.842);
+    width: 100%;
+    padding: .5em 1em;
+}
+
+/* Estilo footer general*/
+
+.footer {
+    display: flex;
+    grid-area: footer;
+    background-color: rgb(27, 26, 26);
+    justify-content: center;
+    padding: 15px;
+    }
+
+footer small {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: bisque;
+}
+
+@media only screen and (max-width: 959px) {
+
+    .logo {
+        font-size: 20px;
+        padding: 10 0px;
+        padding-top: 10px;
+        
+    }
+
+    .fa-solid {
+        display: block;
+        opacity: 1;
+        font-size: 28px;
+        padding: 30px 40px;
+        cursor: pointer;
+
+    }
+    .header
+    
+    .nav-menu {
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-image: linear-gradient(160deg, #0094e9e7 0%, #80d0c7e5 100%);
+        margin-top: 80px;
+        
+    
+    } 
+    
+    .nav-menu-link {
+        line-height: 60px;
+    }
+    
+    .nav-menu-item {
+        display: block;
+        padding: 0px;
+        font-size: 22px;
+    }  
+
+    #open-nav:checked ~ .nav-menu {
+        transition: all 2s;
+        left: 0;
+        opacity: 1;
+        position:fixed;
+        pointer-events:all;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-image: linear-gradient(90deg, #0094e9ee 0%, #80d0c7ef 100%);
+        overflow-y:visible;
+        height: 100%;
+        z-index: 1;
+        }
+
+    /* estilo pagina home mobile */
+    
+    
+    .contenidoHome {
+        margin-top: 100px;
+        padding-top: 0px;
+        font-size: 25px;
+        
+    }
+    
+    
+    .contenidoHome__link {
+        margin-top: 34x;
+    
+    }
+
+    .ContenedorImagen {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px;
+        padding-top: 70px;
+        
+        
+    }
+
+
+    .form {
+    width: 440px;
+    }
+
+    .form_input {
+    width: 70%;
+    }
+    .form_titulo {
+        font-size: 1.4em;
+    }
+
+}

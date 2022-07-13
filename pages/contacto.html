@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matias Romero - Desarrollo web</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../estilos.css">
+  </head>
+  <body class="contenedor-grid">
+    <!--Cabecera de la web-->
+    <header class="header">
+      <nav class="nav">
+        <a href="../index.html" class="logo" >MATIAS ROMERO <span>DISEÑO WEB </span></a>
+        <input type="checkbox" id="open-nav">
+        <label for="open-nav" class="mobile-button">
+        <i class="fa-solid fa-bars"></i>
+        </label>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="../index.html"class="nav-menu-link" >Home</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="sobremi.html" class="nav-menu-link">Sobre mí</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="servicios.html" class="nav-menu-link">Servicios</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="proyectos.html" class="nav-menu-link">Proyectos</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="#" class="nav-menu-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <!--Contenido de la seccion contacto-->
+    <main class="contacto">
+      <div class="contenedor-formulario">
+      <form class="form" action="" method="post" enctype="text/plain">
+        <div>
+        <h2 class="form_titulo">Formulario de Contacto</h2>
+        </div>
+        <div class="form_contenedor">
+        <div class="form_elemento">
+          <label for="Nombre">Nombre<span>*</span></label>
+          <input type="text" name="Nombre" class="form_input" placeholder=" " required>
+        </div>
+        <div class="form_elemento">
+          <label for="Apellido">Apellido<span>*</span></label>
+          <input type="text" name="Apellido" class="form_input" placeholder=" " required>
+        </div>
+        <div class="form_elemento">
+          <label for="Email">Email<span>*</span></label>
+          <input type="email" name="Email" class="form_input" placeholder=" " required>
+        </div>
+        <div class="form_elemento">
+            <legend>Tipo de Proyecto</legend>
+            <select name="Tipo de Proyecto">
+              <option value>Seleccione una Opcion</option>
+              <option value="Opcion 1">Diseño web desde 0</option>
+              <option value="Opcion 2">Implementacion de nuevas funciones</option>
+              <option value="Opcion 3">Renovacion de diseño</option>
+            </select>
+        </div>
+        <div>
+        <label>Describa Su Proyecto y Requisitos *</label>
+        <textarea rows="10" required cols="40" placeholder=""></textarea>
+        </div>
+        <div>
+          <input type="submit" class="form_enviar" value="Enviar Solicitud">
+        </div>
+        </div>
+      </form>
+      </div>
+    </main>
+    <!--Mi Footer-->
+    <footer class="footer">
+        <small>copyright © 2022. Todos los derechos reservados</small>
+    </footer>
+  </body>
+</html>
