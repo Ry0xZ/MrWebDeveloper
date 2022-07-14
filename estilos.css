@@ -7,11 +7,11 @@
 }
 
 
-/* maquetado con grid */
-
 html{
     height: 100%;
 }
+
+/* maquetado con grid */
 
 .contenedor-grid {
     display: grid;
@@ -187,6 +187,11 @@ html{
     
 }
 
+.contenedor-item {
+    height: auto;
+    width: auto;
+}
+
 .ContenedorImagen_elemento {
     width: 459px;
     height: 359px;
@@ -226,7 +231,6 @@ html{
 }
 .contenedorServicios__elemento {
     font-family: 'Lemonada', cursive;
-    display:inline-block;
     vertical-align: middle;
     float: right;
     height: 200px;
@@ -338,7 +342,11 @@ footer small {
     color: bisque;
 }
 
+        /* RESPONSIVE */
+
 @media only screen and (max-width: 959px) {
+
+    /* Menu pagina tablet/mobile */
 
     .logo {
         font-size: 20px;
@@ -396,7 +404,7 @@ footer small {
         z-index: 1;
         }
 
-    /* estilo pagina home mobile */
+    /* estilo pagina  tablet */
     
     
     .contenidoHome {
@@ -407,20 +415,34 @@ footer small {
     }
     
     
-    .contenidoHome__link {
-        margin-top: 34x;
+    .contenedorProyectos {
+        width: auto;
+    
+    }
+
+    .contenedorProyectos {
+        width: auto;
     
     }
 
     .ContenedorImagen {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 100px;
-        padding-top: 70px;
+        grid-template-rows: auto;
+        padding-top: 40px;
         
         
     }
 
+    .ContenedorImagen_elemento {
+        width: 359px;
+        height: 259px;
+        
+    }
+    
+    .contenedor-item {
+        margin: 2px;
+    }
 
     .form {
     width: 440px;
@@ -432,5 +454,48 @@ footer small {
     .form_titulo {
         font-size: 1.4em;
     }
+}
+
+/* Estilo de pagina Mobile */
+
+@media only screen and (max-width: 640px) {
+
+    .ContenedorImagen {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    footer small {
+        font-size: 15px;
+    }
+    
+
+    .form {
+        width: 80%;
+}
+
+.selector {
+    width: 80%;
+}
+
+    .form_input {
+        width: 80%;
+
 
 }
+
+    .form_enviar {
+        width: 90%;
+}
+
+    .textarea {
+        width: 90%
+}
+
+    .form_enviar {
+        width: 90%;
+}
+    
+}
+
+
