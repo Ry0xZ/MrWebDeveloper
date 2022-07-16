@@ -114,6 +114,8 @@ html{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        height: 800px;
         padding-top: 100px;
         padding-bottom: 80px;
         font-size: 35px;
@@ -468,6 +470,14 @@ footer small {
     .ContenedorImagen {
         grid-template-columns: repeat(1, 1fr);
 
+    }
+
+    .contenedorProyectos__titulo {
+        font-size: 0.8rem;
+    }
+
+    .contenedorProyectos p {
+        font-size: 0.8rem;
     }
 
     .footer small {
