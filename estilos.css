@@ -18,7 +18,7 @@ html{
     min-height: 100%;
     grid-template-areas:
     "header" 
-    "navbar"
+    /* "navbar" */
     "main"
     "footer";
 }
@@ -52,7 +52,7 @@ html{
 
 .logo {
     font-size: 30px;
-    padding: 0 40px;
+    padding-left: 40px;
     color: rgb(255, 255, 255);
     padding-top: 20px;
     text-decoration-line: overline;
@@ -114,11 +114,9 @@ html{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        margin-top: 200px;
-        padding-top: 200px ;
+        padding-top: 100px;
         padding-bottom: 80px;
-        font-size: 40px;
+        font-size: 30px;
         text-transform: uppercase;
     
 }
@@ -264,17 +262,16 @@ html{
 .contenedor-formulario{
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     height: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .form {
     background-color: cornflowerblue;
-    margin:auto;
     width: 90%;
-    max-width: 400px;
+    max-width: 380px;
     padding: 2.5em 3em;
     border-radius: 10px;
     box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
@@ -301,7 +298,7 @@ html{
     color: black;
 }
 
-.form_elemento span {
+.form span {
     color: rgb(255, 0, 0);
 }
 
@@ -460,6 +457,13 @@ footer small {
 
 @media only screen and (max-width: 640px) {
 
+    .contenidoHome {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 20px;
+    
+}
+
     .ContenedorImagen {
         grid-template-columns: repeat(1, 1fr);
 
@@ -471,29 +475,42 @@ footer small {
     
 
     .form {
-        width: 80%;
+        width: 60%;
+        max-width: 300px;
+        padding: .5em 2em;
 }
 
 .selector {
-    width: 80%;
+    width: 70%;
 }
 
     .form_input {
-        width: 80%;
+        width: 60%;
 
 
 }
 
     .form_enviar {
-        width: 90%;
+        width: 70%;
 }
 
     .textarea {
-        width: 90%
+        width: 75%
 }
 
     .form_enviar {
-        width: 90%;
+        width: 70%;
+}
+
+.form label {
+    font-size: 12px;
+}
+.form legend {
+    font-size: 12px;
+}
+
+.form_titulo {
+    font-size: 17px;
 }
     
 }
