@@ -116,7 +116,7 @@ html{
         align-items: center;
         padding-top: 100px;
         padding-bottom: 80px;
-        font-size: 30px;
+        font-size: 35px;
         text-transform: uppercase;
     
 }
@@ -287,7 +287,9 @@ html{
 
 .form_contenedor {
     margin-top: 0px;
-    display:grid;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     gap: 2.5em;
     z-index: 2;
 
@@ -360,7 +362,6 @@ footer small {
         cursor: pointer;
 
     }
-    .header
     
     .nav-menu {
         position: fixed;
@@ -469,23 +470,25 @@ footer small {
 
     }
 
-    footer small {
+    .footer small {
         font-size: 15px;
     }
     
 
+
     .form {
-        width: 60%;
+        width: 65%;
         max-width: 300px;
-        padding: .5em 2em;
+        padding: 0.4em 0.9em;
 }
 
-.selector {
-    width: 70%;
+    .selector {
+        width: 80%;
 }
 
     .form_input {
-        width: 60%;
+        width: 80%;
+        padding: .3em .2em;
 
 
 }
@@ -495,24 +498,22 @@ footer small {
 }
 
     .textarea {
-        width: 75%
+        width: 90%;
 }
 
     .form_enviar {
-        width: 70%;
+        width: 100%;
 }
 
-.form label {
-    font-size: 12px;
+    .form label {
+        font-size: 12px;
 }
-.form legend {
-    font-size: 12px;
+    .form legend {
+        font-size: 12px;
 }
 
-.form_titulo {
-    font-size: 17px;
+    .form_titulo {
+        font-size: 1.1rem;
 }
     
 }
-
-
