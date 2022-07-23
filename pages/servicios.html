@@ -8,40 +8,45 @@
     <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos.css">
   </head>
   <body class="contenedor-grid">
     <!--Cabecera de la web-->
-    <header class="header">
-      <nav class="nav">
-        <a href="../index.html" class="logo" >Matias Romero <span>Desarrollo web </span></a>
-        <input type="checkbox" id="open-nav">
-        <label for="open-nav" class="mobile-button">
-        <i class="fa-solid fa-bars"></i>
-        </label>
-        <ul class="nav-menu">
-          <li class="nav-menu-item">
-            <a href="../index.html"class="nav-menu-link" >Home</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="sobremi.html" class="nav-menu-link">Sobre mí</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link">Servicios</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="proyectos.html" class="nav-menu-link">Proyectos</a>
-          </li>
-          <li class="nav-menu-item">
-            <a href="contacto.html" class="nav-menu-link">Contacto</a>
-          </li>
-        </ul>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg  navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand logo " href="#">Matias Romero <span>Desarrollo web</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="../index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobremi.html">Sobre mí</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="proyectos.html">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
+    </header>
     <main class="servicios">
       <div class="titulo">
         <h2>Servi<span>cios</span></h2>
@@ -71,5 +76,9 @@
         <small>copyright © 2022. Todos los derechos reservados</small>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+<script src="../animacion.js"></script>
   </body>
 </html>
